@@ -1,2 +1,2 @@
-# tests
-Simple webapp to experiment with new things
+# Tests repository
+Simple webapp to experiment with small projects

@@ -1,135 +1,156 @@
 * {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    background: linear-gradient(#0FC2C0, #0CABA8, #008F8C, #015958, #023535);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(#0fc2c0, #0caba8, #008f8c, #015958, #023535);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
 }
 
-#projects-container, #status-container {
-    width: 80vw; /* Use a larger width for smaller screens */
-    max-width: 600px; /* Limit the max width on larger screens */
-    background: linear-gradient(#005C53, #063f39);
-    margin: 40px 0;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px; /* Add some rounding for better aesthetics */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+#projects-container,
+#status-container {
+  width: 80vw; /* Use a larger width for smaller screens */
+  max-width: 600px; /* Limit the max width on larger screens */
+  background: linear-gradient(#005c53, #063f39);
+  margin: 40px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px; /* Add some rounding for better aesthetics */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .project {
-    width: 100%; /* Make projects take full width of container */
-    background-color: #acecea;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 5px; /* Add some rounding for better aesthetics */
-    transition: background-color 0.5s ease;
-    transition: color 0.5s ease;
-    color: #042940;
+  width: 100%; /* Make projects take full width of container */
+  background-color: #acecea;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 5px; /* Add some rounding for better aesthetics */
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #042940;
 }
 
 .project:hover {
-    background-color: #042940; /* Add a hover effect */
-    color: #acecea;
+  background-color: #042940; /* Add a hover effect */
+  color: #acecea;
 }
 
 .project.in-progress {
-    background-color: #ecd0ac;
-    color: #402804;
+  background-color: #ecd0ac;
+  color: #402804;
 }
 
 .project.in-progress:hover {
-    color: #ecd0ac;
-    background-color: #402804;
+  color: #ecd0ac;
+  background-color: #402804;
 }
 
 /* Styles for projects that haven't started */
 .project.not-started {
-    background: #cdacec; /* Example background color for not started projects */
-    color: #320440;
+  background: #cdacec; /* Example background color for not started projects */
+  color: #320440;
 }
 
 .project.not-started:hover {
-    background: #320440; /* Example background color for not started projects */
-    color: #cdacec;
+  background: #320440; /* Example background color for not started projects */
+  color: #cdacec;
 }
 
-a {
-    text-decoration: none;
-    display: block; /* Make the entire project block clickable */
+.project-link {
+  text-decoration: none;
+  display: block;
 }
 
 h2 {
-    font-size: 20pt;
-    margin-bottom: 10px; /* Add some spacing below the heading */
+  font-size: 20pt;
+  margin-bottom: 10px; /* Add some spacing below the heading */
 }
 
 h4 {
-    font-size: 20pt;
+  font-size: 20pt;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
-    #projects-container, #status-container {
-        width: 90vw; /* Make the container take up more space on smaller screens */
-        padding: 15px;
-    }
+  #projects-container,
+  #status-container {
+    width: 90vw; /* Make the container take up more space on smaller screens */
+    padding: 15px;
+  }
 
-    .project {
-        padding: 15px;
-    }
+  .project {
+    padding: 15px;
+  }
 
-    h2 {
-        font-size: 18pt; /* Decrease font size on smaller screens */
-    }
+  h2 {
+    font-size: 18pt; /* Decrease font size on smaller screens */
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    h2 {
-        font-size: 16pt; /* Further decrease font size on very small screens */
-    }
+  h2 {
+    font-size: 16pt; /* Further decrease font size on very small screens */
+  }
 
-    .project {
-        padding: 8px;
-    }
+  .project {
+    padding: 8px;
+  }
 }
 
 .status-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Space between status labels */
-    padding-left: 20%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between status labels */
+  padding-left: 20%;
 }
 
 .dot {
-    height: 30px;
-    width: 30px;
-    border-radius: 90%;
-    display: inline-block;
-  }
+  height: 30px;
+  width: 30px;
+  border-radius: 90%;
+  display: inline-block;
+}
 
-  .d1 {
-    background: linear-gradient(to bottom right,#acecea 40%, #042940);
-  }
+.d1 {
+  background: linear-gradient(to bottom right, #acecea 40%, #042940);
+}
 
-  .d2 {
-    background: linear-gradient(to bottom right, #ecd0ac 40%, #402804);
-  }
+.d2 {
+  background: linear-gradient(to bottom right, #ecd0ac 40%, #402804);
+}
 
-  .d3 {
-    background: linear-gradient(to bottom right, #cdacec 40%, #320440);
-  }
-  
-  h4 {
-    margin-left: 20px;
-    color: #defffe;
-  }
+.d3 {
+  background: linear-gradient(to bottom right, #cdacec 40%, #320440);
+}
 
+h4 {
+  margin-left: 20px;
+  color: #defffe;
+}
+
+.return {
+  color: #acecea;
+  text-decoration: none;
+  font-size: 20pt;
+  width: 100vw;
+  height: fit-content;
+  background-color: #042940;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.return:hover {
+  color: #042940;
+  background-color: #acecea;
+}

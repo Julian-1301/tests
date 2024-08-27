@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Random Quote Generator",
+        "description": "Generate a random inspirational or humorous quote at the click of a button. This project uses JavaScript to fetch quotes from a predefined array or an external API, offering a fresh quote every time you interact with it.",
+        "link": "projects/randomquote/randomquote.html",
+        "stat": "in-progress"
+    },
+    {
+        "name": "To-Do List",
+        "description": "Manage your tasks efficiently with this interactive to-do list application. Add, edit, and delete tasks as needed, and mark them as completed. The project showcases CRUD (Create, Read, Update, Delete) operations using JavaScript and local storage.",
+        "link": "projects/todolist/todolist.html",
+        "stat": "not-started"
+    },
+    {
+        "name": "Palindrome Checker",
+        "description": "Check if a given word, phrase, or number is a palindrome—meaning it reads the same backward as forward. This project highlights the use of string manipulation and algorithmic logic to validate palindromes, offering immediate feedback for user inputs.",
+        "link": "projects/palindrome/palindrome.html",
+        "stat": "not-started"
+    },
+    {
+        "name": "Guess the Number Game",
+        "description": "Engage in a fun number-guessing game where you try to guess a randomly generated number within a specific range. With hints and a limited number of attempts, this project demonstrates basic game logic and user interaction.",
+        "link": "projects/guessnumber/guessnumber.html",
+        "stat": "not-started"
+    },
+    {
+        "name": "Image Slider",
+        "description": "Display a collection of images in a responsive and interactive slider. Users can navigate through images with next and previous buttons, or automatically cycle through them. This project illustrates the use of JavaScript for DOM manipulation and CSS for styling.",
+        "link": "projects/imageslider/imageslider.html",
+        "stat": "not-started"
+    }
+]
+
+
